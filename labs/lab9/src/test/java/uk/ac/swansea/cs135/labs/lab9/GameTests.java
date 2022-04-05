@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * This file shows example test cases that you should
  * use as templates when creating your own.
- *
+ * <p>
  * It also holds useful utility methods that you may
  * want to copy into your test suites.
  */
@@ -71,6 +71,7 @@ public class GameTests extends ApplicationTest {
     /**
      * This is a utility method that can be used to find out
      * the number of squares that are red.
+     *
      * @return The number of red squares.
      */
     public int getNumberReds() {
@@ -79,7 +80,7 @@ public class GameTests extends ApplicationTest {
         for (int i = 0; i < Game.GRID_SIZE * Game.GRID_SIZE; i++) {
             Button b = lookup("#button" + i).queryButton();
 
-            if(b.getStyle().equals(Game.BUTTON_STYLE_RED)) {
+            if (b.getStyle().equals(Game.BUTTON_STYLE_RED)) {
                 numberOfReds++;
             }
         }
@@ -89,6 +90,7 @@ public class GameTests extends ApplicationTest {
 
     /**
      * Access the result label's text in the game.
+     *
      * @return The actual text being displayed as the result.
      */
     public String observeDisplay() {
