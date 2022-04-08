@@ -217,6 +217,8 @@ public class Game extends Application {
      * @param y The y coordinate of the square (counting from 0 at the top).
      */
     public void displaySquare(int x, int y) {
+        displaySquareX = x;
+        displaySquareY = y;
         int buttonIndex = y * GRID_SIZE + x;
         Button button = buttons.get(buttonIndex);
         button.setStyle(BUTTON_STYLE_RED);
